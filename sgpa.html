@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0 auto;
+      max-width: 900px;
+      width: 90%;
+      text-align: center;
+    }
+    .box{
+      background-color: black;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      border: 3px solid white;
+      padding: 20px;
+      color: white;
+
+    }
+    .container{
+      background-color: white;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      border: 3px solid black;
+      padding: 20px;
+      text-align: left;
+      
+    }
+
+    .v{
+      text-align: center;
+      font-size: 20px;
+    }
+    
+    
+  </style>
+</head>
+
+<body>
+  <div class="box">
+  <centre><h1>SGPA Calculator</h1></centre>
+  <centre><h3>Enter The Grades Obtained</h3></centre>
+  </div>
+
+  <div class="container">
+
+  <form action="/action.php">
+  <label>Four Credit Point Subject 1:</label>
+  
+  
+    <input type="number" id="num1" class="form-control" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+  
+    <label>Four Credit Point Subject 2:</label>
+    <input type="number" id="num2" class="form-control" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+    <label>Three Credit Point Subject 1:</label>
+    <input type="number" id="num3" class="form-control" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+    
+    <label>Three Credit Point Subject 2:</label>
+    
+    <input type="number" id="num4" class="form-control" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+    <label>Three Credit Point Subject 3:</label>
+    <input type="number" id="num5" class="form-control" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+    <label>One Credit Point Subject 1:</label>
+    <input type="number" id="num6" class="form-control"style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+    <label>One Credit Point Subject 2:</label>
+    <input type="number"  id="num7" class="form-control" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+    <label>One Credit Point Subject 3:</label>
+    <input type="number"  id="num8" class="form-control" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+
+    <p type="number"  id="num9" class="form-control" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke; margin-top:15px;">
+
+
+    
+  
+  </form>
+
+  <div class="v">
+  
+  <button onclick="here()" style="border: 3px solid black; border-radius: 10px; padding: 5px;background-color:white;margin: 15px;height: 50px; width:100px; font-size: 20px; cursor:pointer;">find out ! </button>
+  <button id="reset" onclick="ret()" style="border: 3px solid black; border-radius: 10px; padding: 5px;background-color:white;margin: 15px;height: 50px; width:100px; font-size: 20px; cursor:pointer;">RESET</button>
+
+  
+  
+</div>
+
+</div>
+
+<script type="text/javascript">
+  
+     function here(){
+
+       let n1=parseInt(document.getElementById('num1').value);
+       let n2=parseInt(document.getElementById('num2').value);
+       let n3=parseInt(document.getElementById('num3').value);
+       let n4=parseInt(document.getElementById('num4').value);
+       let n5=parseInt(document.getElementById('num5').value);
+       let n6=parseInt(document.getElementById('num6').value);
+       let n7=parseInt(document.getElementById('num7').value);
+       let n8=parseInt(document.getElementById('num8').value);
+
+       if((n1<0||n1>10)||(n2<0||n2>10)||(n3<0||n3>10)||(n4<0||n4>10)||(n5<0||n5>10)||(n6<0||n6>10)||(n7<0||n7>10)||(n8<0||n8>10)){
+        document.getElementById('num9').innerHTML="Enter Valid Grdaes";
+
+       }
+       else{
+       let gpa=((n1*4)+(n2*4)+(n3*3)+(n4*3)+(n5*3)+n6+n7+n8)/20;
+
+      
+      document.getElementById('num9').innerHTML= "Your SGPA is "+gpa;
+       }
+      
+     }
+      function ret(){
+        let btnclear=document.querySelector('#reset');
+        let inputs=document.querySelectorAll('input');
+        let a=document.querySelectorAll("p");
+        btnclear.addEventListener('click',()=>{
+          inputs.forEach(input=>input.value='');
+          
+        document.getElementById('num9').innerHTML='';
+        });
+      }
+    
+
+</script>
+
+</body>
+
+</html>
