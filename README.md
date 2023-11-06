@@ -5,7 +5,7 @@ SGPA Calculator is a simple tool to calculate the Semester Grade Point Average (
 
 ## Table of Contents
 - [Features](#features)
-- [How to Use](#how-to-use)
+
   
 
 ## Features
