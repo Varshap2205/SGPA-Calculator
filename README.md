@@ -14,7 +14,7 @@ SGPA Calculator is a simple tool to calculate the Semester Grade Point Average (
 - Custom Grading Systems: You can customize the grading system to match your university's specific grading criteria.
 - Accurate Results: The calculator ensures accurate SGPA calculations, helping students track their academic progress.
 
-## Iamge
+## Image
 
 ![image](https://github.com/Varshap2205/SGPA-Calculator/assets/142588198/c8965f5f-7fbb-471b-b63a-34a07fe1415a)
 
