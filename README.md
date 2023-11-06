@@ -14,20 +14,8 @@ SGPA Calculator is a simple tool to calculate the Semester Grade Point Average (
 - Custom Grading Systems: You can customize the grading system to match your university's specific grading criteria.
 - Accurate Results: The calculator ensures accurate SGPA calculations, helping students track their academic progress.
 
-## How to Use
-1. Clone the repository to your local machine using `git clone`.
+## Iamge
 
-2. Open the `sgpa.html` file in your web browser.
-
-3. Input your subject details:
-
-   - Grade (based on your university's grading system)
-  
-
-4. Click the "find out !" button to obtain your SGPA for the semester.
-
-5. Customize the grading system (if necessary) by editing the `gradingSystem` array in the `sgpa.js` file.
-
-6. Feel free to use or integrate this calculator into your website or educational project.
+![image](https://github.com/Varshap2205/SGPA-Calculator/assets/142588198/c8965f5f-7fbb-471b-b63a-34a07fe1415a)
 
 
